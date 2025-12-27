@@ -1,80 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width">
-    <title>Next Page</title>
-
-    <style>
-        body {
-            margin: 0;
-        }
-
-        .page {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .page img.bg {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        /* GIF – bottom right */
-        .corner-gif {
-            position: absolute;
-            bottom: 20%;
-            right: 0%;
-            width: 75%;
-            max-width: 100vh;
-            z-index: 20;
-        }
-
-        /* Top button */
-        .top-btn {
-            position: absolute;
-            top: 8%;
-            left: 8%;
-            z-index: 30;
-        }
-
-        .top-btn img {
-            width: 100%;
-            cursor: pointer;
-        }
-
-        /* Mobile tweaks */
-        @media (max-width: 768px) {
-            .corner-gif {
-                width: 160px;
-                bottom: 3%;
-                right: 3%;
-            }
-
-            .top-btn img {
-                width: 110px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Second Page</title>
 </head>
 
-<body>
+<body style="margin:0;">
 
-<div class="page">
+<div style="
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+">
 
     <!-- Background image -->
-    <img src="thday (2).png" class="bg" alt="Background">
+    <img src="thday (2).png"
+         style="
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            display:block;
+         ">
 
     <!-- Top link button -->
-    <a href="https://dragon-wolf.edgeone.app/" class="top-btn">
-        <img src="next.png" alt="Button">
+    <a href="https://dragon-wolf.edgeone.app/"
+       style="
+            position:absolute;
+            top:15%;
+            left:25%;
+            transform:translate(-50%,-50%);
+            width:45%;
+            z-index:10;
+       ">
+        <img src="next.png"
+             style="
+                width:100%;
+                cursor:pointer;
+             ">
     </a>
 
     <!-- Bottom right GIF -->
-    <img src="_ (1).gif" class="corner-gif" alt="GIF">
+    <img src="_ (1).gif"
+         style="
+            position:absolute;
+            bottom:15%;
+            right:5%;
+            width:40%;
+            z-index:9;
+         ">
 
 </div>
 

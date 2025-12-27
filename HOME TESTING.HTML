@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>Next Page</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .page {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .page img.bg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* GIF – bottom right */
+        .corner-gif {
+            position: absolute;
+            bottom: 20%;
+            right: 0%;
+            width: 75%;
+            max-width: 100vh;
+            z-index: 20;
+        }
+
+        /* Top button */
+        .top-btn {
+            position: absolute;
+            top: 8%;
+            left: 8%;
+            z-index: 30;
+        }
+
+        .top-btn img {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        /* Mobile tweaks */
+        @media (max-width: 768px) {
+            .corner-gif {
+                width: 160px;
+                bottom: 3%;
+                right: 3%;
+            }
+
+            .top-btn img {
+                width: 110px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- Background image -->
+    <img src="thday (2).png" class="bg" alt="Background">
+
+    <!-- Top link button -->
+    <a href="https://dragon-wolf.edgeone.app/" class="top-btn">
+        <img src="next.png" alt="Button">
+    </a>
+
+    <!-- Bottom right GIF -->
+    <img src="_ (1).gif" class="corner-gif" alt="GIF">
+
+</div>
+
+</body>
+</html>
